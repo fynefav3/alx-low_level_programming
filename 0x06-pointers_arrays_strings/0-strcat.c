@@ -1,5 +1,5 @@
-#include <main.h>
-#include <stdio.h>
+#include "main.h"
+
 /**
  * _strcat - concat 2 string
  * @dest:char
@@ -10,12 +10,12 @@ char *_strcat(char *dest, char *src)
 {
 	char *s = dest;
 
-	if  (*dest != '\0')
+	while (*dest != '\0')
 	{
 		dest++;
 	}
 
-else if (*src != '\0')
+	while (*src != '\0')
 	{
 		*dest = *src;
 		dest++;
